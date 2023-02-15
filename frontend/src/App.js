@@ -10,8 +10,8 @@ import AuthContext from "./shared/store/auth-context";
 
 
 
+
 function App() {
-  console.log('Rendering')
   const isLoggedIn = localStorage.getItem('isLoggedIn') !== null
 
   const ctx = useContext(AuthContext)
@@ -20,18 +20,18 @@ function App() {
 
   if (isLoggedIn) {
     routes = <>
-      <Route path="/" element={<Users />} />
+      <Route path="/users" element={<Users />} />
       <Route path="/:userId/places" exact element={<UserPlaces />} />
       <Route path="/:userId/myplaces" exact element={<MyPlaces />} />
       <Route path="*" element={<Navigate to="/" replace />} />
     </>
   } else {
     routes = <>
-      <Route path="/" element={<Users />} />
+      <Route path="/users" element={<Users />} />
       <Route path="/:userId/places" exact element={<UserPlaces />} />
       <Route path="/auth/login" element={<Login />} />
       <Route path="/user/places" element={<Navigate to="/auth/login" replace />} />
-      <Route path="*" element={<Navigate to="/" replace />} />
+      <Route path="*" element={<Navigate to="/auth/login" replace />} />
     </>
   }
 

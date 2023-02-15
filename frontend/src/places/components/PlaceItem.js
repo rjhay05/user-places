@@ -46,7 +46,7 @@ export default function PlaceItem(props) {
     ctx.loadingHandler(true)
     const token = localStorage.getItem('Token')
     try {
-      const res = await Axios.delete(url, {
+        await Axios.delete(url, {
         headers: {
           'Authorization': 'Bearer ' + token
         }

@@ -92,14 +92,13 @@ function LoginForm(props) {
             email: email.value,
             password: password.value
         }
-        let userId;
+
 
         try {
             ctx.loadingHandler(true)
             const url = 'http://localhost:5000/api/users/login'
             const { data: res } = await Axios.post(url, data)
             ctx.loggedInHandler(res.userId, res.token)
-            userId = res.userId
             // window.location = '/user/places'
         } catch (error) {
             setError(error.response.data)

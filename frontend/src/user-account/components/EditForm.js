@@ -41,7 +41,7 @@ function EditForm(props) {
             formData.append('description', data.description);
             formData.append('address', data.address);
             formData.append('image', data.image);
-            const { data: res } = await Axios.patch(url, formData, {
+            await Axios.patch(url, formData, {
                 headers: {
                     'Authorization' : 'Bearer ' + token
                 }

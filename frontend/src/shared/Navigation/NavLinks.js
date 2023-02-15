@@ -16,7 +16,7 @@ function NavLinks(props) {
     return (
          <ul className={`${style[ 'nav-list' ]} ${classes}`}>
             <li>
-                <NavLink to="/">Users</NavLink>
+                <NavLink to="/users">Users</NavLink>
             </li>
             {
                 ctx.isLoggedIn &&

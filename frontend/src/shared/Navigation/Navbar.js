@@ -5,6 +5,7 @@ import MainHeader from './MainHeader';
 import NavLinks from './NavLinks';
 import style from './Navbar.module.css';
 import SideDrawer from './SideDrawer';
+import PlaceIcon from '../images/place.png'
 
 
 function Navbar() {
@@ -20,7 +21,14 @@ function Navbar() {
   return (
     <>
       <MainHeader>
-        <h1 className={style.title}><Link to="/">Your Place</Link></h1>
+        <div className={style.brand}>
+          <div className={style.title}>
+            <h1>Userly</h1>
+          </div>
+          <div className={style.icon}>
+            <Link to='/'><img src={PlaceIcon} alt="User Places" /></Link>
+          </div>
+        </div>
         <button className={style.button} onClick={showDrawerHandler}>
           <span> </span>
           <span> </span>
@@ -30,7 +38,7 @@ function Navbar() {
           <NavLinks />
         </nav>
       </MainHeader>
-     <SideDrawer onClick={closeDrawerHandler} show={isDrawer} onClose={closeDrawerHandler}>
+      <SideDrawer onClick={closeDrawerHandler} show={isDrawer} onClose={closeDrawerHandler}>
         <NavLinks className={style[ 'nav-drawer' ]} onClick={closeDrawerHandler} />
       </SideDrawer>
 

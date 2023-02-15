@@ -134,7 +134,7 @@ function SignUpForm(props) {
         try {
             ctx.loadingHandler(true)
             const url = 'http://localhost:5000/api/users/signup'
-            const { data: res } = await Axios.post(url, data)
+            await Axios.post(url, data)
             window.location = '/auth/login'
         } catch (error) {
             setError(error.response.data)

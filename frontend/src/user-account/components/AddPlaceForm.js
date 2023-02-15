@@ -48,7 +48,7 @@ function AddPlaceForm(props) {
             formData.append('address', data.address)
             formData.append('image', data.image)
             formData.append('creator', data.creator)
-            const { data: res } = await Axios.post(url, formData, {
+            await Axios.post(url, formData, {
                 headers: {
                     'Authorization': 'Bearer '+ token
                 }
