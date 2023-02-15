@@ -1,0 +1,35 @@
+
+.left-container,
+.right-container {
+  width: 400px;
+  height: 500px;
+  padding: 2rem;
+}
+
+.right-container {
+  background-color: rgb(60, 53, 53);
+}
+
+
+.left-container {
+  background-color: darkblue;
+  transform: translateX(3rem);
+  color: antiquewhite;
+  display: none;
+}
+
+@media (min-width: 712px) {
+  .left-container,
+  .right-container {
+  width: 450px;
+  }
+
+  .left-container {
+    display: block;
+  }
+
+  .right-container {
+    transform: translate(-3rem, 4rem);
+  }
+
+}

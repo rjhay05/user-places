@@ -1,0 +1,11 @@
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: darkblue;
+  padding: 1rem;
+  display: flex;
+  z-index: 100;
+  justify-content: space-around;
+}

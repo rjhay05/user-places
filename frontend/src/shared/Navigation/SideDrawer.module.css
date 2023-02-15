@@ -1,0 +1,16 @@
+.side-drawer {
+  position: fixed;
+  width: 50%;
+  height: 100vh;
+  background-color: rgb(60, 53, 53);
+  z-index: 99999;
+}
+
+@media (min-width: 712px){
+  .side-drawer, .backdrop {
+    display: none;
+  }
+
+
+}
+

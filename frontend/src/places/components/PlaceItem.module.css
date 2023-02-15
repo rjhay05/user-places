@@ -1,0 +1,15 @@
+.card {
+    width: 300px;
+    margin: 2rem 0 2rem 0;
+}
+
+.map-container {
+    width: 100%;
+    height: 40vh;
+}
+
+@media (min-width: 612px){
+    .card{
+        width: 60%;
+    }
+}

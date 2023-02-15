@@ -1,0 +1,42 @@
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.close {
+  margin: 5px 10px;
+  width: 30px;
+  cursor: pointer;
+  color: red;
+  text-align: center;
+  font-weight: 500;
+  padding: .5rem;
+}
+
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.form-control label {
+  margin-bottom: 0.5rem;
+}
+
+.form-control input,
+textarea {
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+.form-control textarea {
+  resize: vertical;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+}

@@ -1,0 +1,17 @@
+.card {
+    width: 350px;
+    padding: calc(1rem + 1.5625vw);
+}
+
+.card-header {
+    font-size: 2vmin;
+}
+
+
+.card:active, .card:hover{
+    background-color: darkblue;
+    color: antiquewhite;
+}
+
+
+

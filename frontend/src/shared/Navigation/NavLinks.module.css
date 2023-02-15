@@ -1,0 +1,22 @@
+.nav-list {
+  display: flex;
+  list-style: none;
+}
+
+.nav-list li {
+  padding: 1rem;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: antiquewhite;
+  padding: 0.5rem;
+}
+
+.nav-list a:hover,
+.nav-list a:active,
+.nav-list a.active {
+  background: darkgrey;
+  border-radius: 5px;
+  color: darkblue;
+}

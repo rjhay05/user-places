@@ -1,0 +1,70 @@
+.form-control {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control label {
+  color: antiquewhite;
+  margin-bottom: 0.5rem;
+}
+
+.form-control input {
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+.invalid {
+  background-color: rgb(253, 159, 159);
+}
+
+.valid-field {
+  margin-top: .5rem;
+  background-color: rgb(64, 193, 0);
+  color: antiquewhite;
+  padding: 1rem;
+  text-align: center;
+
+}
+
+
+.invalid-field {
+  margin-top: .5rem;
+  background-color: red;
+  color: antiquewhite;
+  padding: 1rem;
+  text-align: center;
+
+}
+
+.form-actions {
+  display: flex;
+  padding-top: 2rem;
+  justify-content: center;
+}
+
+.form-actions button {
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-size: medium;
+  font-weight: 500;
+}
+
+.form-actions button:active {
+  background: darkblue;
+  border-color: darkblue;
+  color: antiquewhite;
+}
+.form-actions a {
+  text-decoration: none;
+
+}
+
+.link {
+  padding-top: 4rem;
+  text-align: center;
+}
+
+.link a {
+  color: antiquewhite;
+}

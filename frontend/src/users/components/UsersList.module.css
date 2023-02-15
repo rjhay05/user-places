@@ -1,0 +1,17 @@
+.no-users {
+    text-align: center;
+    margin-top: 10rem;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 5rem;
+}
+
+@media (max-width: 1023px){
+    .container{
+        justify-content: center;
+    }
+}
