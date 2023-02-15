@@ -82,6 +82,7 @@ export default function PlaceItem(props) {
       <Modal
         title='Map'
         onClose={closeMapHandler}
+        content=<h3>Map is not available at the moment.</h3>
         footer={<Button color='error' onClick={closeMapHandler}>Close</Button>}
         show={openMap}
       />
